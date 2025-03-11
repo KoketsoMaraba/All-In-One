@@ -1,3 +1,4 @@
+
 # Question 1
 def get_date_of_birth(id_number: str) -> str:
     """
@@ -106,9 +107,42 @@ def return_list_stats(numbers):
              'numbers'
     """
     #pass
-    #statistics = []
-    #dict.keys = ["unique_numbers", "max", "min", "average", "even_numbers", "odd_numbers", "number_of_even_numbers", "number_of_odd_numbers"]
-    #unique_numbers = set(numbers)
+    # statistics = {}
+
+    # # unique_numbers = set(numbers)
+    # # unique_numbers = set(numbers)
+    # statistics.update({"unique_numbers": numbers})
+    # statistics.update({"min": })
+    
+    # unique_numbers = set(numbers)
+    # max = max(numbers)
+    # min = min(numbers)
+    # average = sum(numbers)/len(numbers)
+    # even_numbers= []
+    # for i in numbers:
+    #     if i % 2 == 0:
+    #         even_numbers.append(i)
+    # return tuple(even_numbers)
+
+    # odd_numbers = []
+    # for i in numbers:
+    #     if i % 2 != 0:
+    #         odd_numbers.append(i)
+    # return tuple(odd_numbers)
+
+    # number_of_even_numbers = count
+    # while i % 2 == 0:
+    #     count (i)
+
+    # return 
+
+    # number_of_even_numbers = count
+    # while i % 2 !
+        
+    #     = 0:
+    #     count (i)
+    # statistics.update("unique_numbers"= unique_numbers, "max"= max, "min": min, "average": average, "even_numbers":even_numbers, "odd_numbers": odd_numbers, "number_of_even_numbers": number_of_even_numbers, "number_of_odd_numbers": number_of_odd_numbers}
+    # return dict
 
 print(return_list_stats([1, 3, 6, 2, 3, 8, 5]))
 
