@@ -4,7 +4,14 @@ def get_date_of_birth(id_number: str) -> str:
     STEP 2: Extract the date of birth from the ID number and return it as a string
     return format: DD/MM/YY:
     """
-    pass
+    #pass
+    year = id_number[0:2]
+    month = id_number[2:4]
+    day = id_number[4:6]
+    return day + "/" + month + "/" + year
+
+
+print(get_date_of_birth("9204260478981"))
 
 # Question 2
 def get_gender(id_number: str) -> str:
@@ -15,10 +22,17 @@ def get_gender(id_number: str) -> str:
     Formula: 1 if the ID number's 7th to 10th digit is less than 5000, the person is
     female and if it is greater than 4999, the person is male.
     """
-    pass
+    #pass
+
+    if int(id_number[6])< 5:
+        return "Female"
+    else:
+        return "Male"
+
+print(get_gender("9204266478981"))
 
 # Question 3
-    """
+"""
     Fizzbuzz is a programme that prints the numbers from 1 to n, 
     but for multiples of 3, it prints "Fizz" instead of the number, 
     and for multiples of 5, it prints "Buzz" instead of the number. 
@@ -26,6 +40,19 @@ def get_gender(id_number: str) -> str:
 
     TODO: define a function called fizzbuzz and implement the fucntionality above.
     """
+def fizzbuzz(n):
+
+    for i in range(1, n+1):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5 == 0:
+            print("Buzz")
+        else:
+            print(i)
+
+fizzbuzz(20)
 
 
 # Question 4
@@ -34,7 +61,15 @@ def find_even_numbers(numbers):
     in a tuple
 
     Hint: use modulus (%)"""
-    pass
+    # pass
+    even = []
+    for i in numbers:
+        if i % 2 == 0:
+            even.append(i)
+    return tuple(even)
+
+print(find_even_numbers([1, 5, 4, 2, 4, 9]))
+
 
 # Question 5
 def find_odd_numbers(numbers):
@@ -42,7 +77,15 @@ def find_odd_numbers(numbers):
     in a tuple
 
     Hint: use modulus (%)"""
-    pass
+    #pass
+    odd = []
+    for i in numbers:
+        if i % 2 != 0:
+            odd.append(i)
+    return tuple(odd)
+        
+print(find_odd_numbers([1, 5, 4, 2, 4, 9]))
+
 
 # Question 6
 def return_list_stats(numbers):
@@ -62,7 +105,12 @@ def return_list_stats(numbers):
         number_of_odd_numbers : the total number of even numbers in the list
              'numbers'
     """
-    pass
+    #pass
+    #statistics = []
+    #dict.keys = ["unique_numbers", "max", "min", "average", "even_numbers", "odd_numbers", "number_of_even_numbers", "number_of_odd_numbers"]
+    #unique_numbers = set(numbers)
+
+print(return_list_stats([1, 3, 6, 2, 3, 8, 5]))
 
 # Question 7
 def draw_triangle_reversed(height: int) -> None:
